@@ -1,6 +1,6 @@
 #### #6
 ```html
-<!-- 
+<!-- Comment @dmkorol:
 I noticed that "something-row" is applied for all `some-app-something` components.
 Maybe, it would be better to move this class into component?
 -->
