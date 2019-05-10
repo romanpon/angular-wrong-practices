@@ -95,7 +95,8 @@ let structure = {};
 // table.component.ts
 ...
 getTableName(tableName): string {
-    const findTable = this.tablesData ? this.tablesData.find(table => table.tableName === tableName) : this.tablesData;
+    const findTable = this.tablesData ? 
+      this.tablesData.find(table => table.tableName === tableName) : this.tablesData;
     
     if (findTable) {
       switch (this.settings.language) {
