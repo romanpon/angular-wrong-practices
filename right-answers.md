@@ -6,7 +6,7 @@ Maybe, it would be better to move this class into component?
 -->
 <some-app-something class="something-row"></some-app-something>
 ```
-
+---------------
 Possible solution:
 In most cases you can apply thouse rules to `:host` directly in compoinent.scss
 ```scss
