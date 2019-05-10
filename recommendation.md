@@ -1,4 +1,4 @@
-Code quality recomendations:
+Code quality:
 
 + https://angular.io/guide/styleguide
 
@@ -6,6 +6,16 @@ Code quality recomendations:
 
 + We can use services direct from view 
 https://angular.io/tutorial/toh-pt4#bind-to-the-messageservice
+
++ Naming convention for interfaces:
+export interface 'I' + MooduleName + PropNameProperty
+//example
+export interface IDashboardSummary {
+
++ Dont use to short names
+e, o, r
+And dont use to long vars
+someLongLongDescriptionRelatedToOtherSomthing(){}
 
 + <a> tag always should have 'href' or href="javascript:void(0)"
 
@@ -48,7 +58,7 @@ host: {'class':'class-related-to-component'}
 @HostBinding('class') classList: string = 'breadcrumbs-row';
 @HostBinding('class') @Input('class') classList: string = '';	
 https://github.com/angular/angular/issues/7289
-// 
+// !!!!! Right <---- add Examples 
 constructor(public breadcrumbService: BreadcrumbsService,
               private elementRef: ElementRef) {
 	this.elementRef.nativeElement.classList.add('breadcrumbs-row');
@@ -82,8 +92,3 @@ https://gist.github.com/cyrilletuzi/e6d446c8b1188bd59dd5c6d0f8e31d66#file-archit
 https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7
 https://medium.com/@motcowley/angular-folder-structure-d1809be95542
 https://angular.io/guide/styleguide
-
-
-
-
-
