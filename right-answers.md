@@ -26,6 +26,8 @@ constructor(public breadcrumbService: BreadcrumbsService,
 	this.elementRef.nativeElement.classList.add('breadcrumbs-row');
 }
 ```
-***BEAWERE***: There is some tricky parts with usage `:host` and `@HostBinding`
-see details: https://github.com/angular/angular/issues/7289
+***BEAWERE***: 
+There is some tricky parts with usage `:host` and `@HostBinding`	
+they can override class='' [ngClass]="..."
+See details: https://github.com/angular/angular/issues/7289
 
