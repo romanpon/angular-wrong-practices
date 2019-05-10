@@ -106,7 +106,7 @@ getTableName(tableName): string {
           return findTable.somethingGerman;
       }
     } else {
-      return undefined;
+      return;
     }
 }
 ...
