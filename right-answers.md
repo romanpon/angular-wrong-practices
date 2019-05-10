@@ -10,7 +10,7 @@ Maybe, it would be better to move this class into component?
 Possible solution:
 In most cases you can apply thouse rules to `:host` directly in compoinent.scss
 ```scss
-:host { ... rules ...}
+:host { ... }
 ```
 BUT if you have to add PREDEFINED class(es) for all components in the whole 
 application use this approach 'cause it is a secure way and there are no side effects.
