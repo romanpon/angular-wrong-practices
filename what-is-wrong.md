@@ -122,6 +122,9 @@ What can we do with than?
 ```
 
 #### #7
+
+External libraries which are not intended for global usage should be directly imported in the components where they are needed to reduce bundles size. Next import can be used in the component: import * as Polyglot from '../../../../../../assets/external-lib-name/external-feature1-min.js';
+
 ```js
 //angular.json
 "architect": {
